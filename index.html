@@ -228,7 +228,6 @@
     <textarea id="jsoncontent" style="display: none;"></textarea>
     
     <script>
-
      var savebtn = document.getElementById('btn_export');
      savebtn.onclick = function() {
 	 var jsoncontent = JSON.stringify(window.__canvas.toJSON());
@@ -236,10 +235,7 @@
 	 var ta = document.getElementById('jsoncontent');
 	 ta.value = jsoncontent;
 	 ta.select();
-	 
      };
-
-     
 
      var loadbtn = document.getElementById('btn_import');
      loadbtn.onclick = function() {
@@ -249,10 +245,6 @@
      var clearbtn = document.getElementById('btn_clear');
      clearbtn.onclick = function() {
 	 window.__canvas.clear();};
-     
     </script>
-
- 
-
     </body>
 </html>
